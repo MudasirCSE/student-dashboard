@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Student Dashboard</title>
+    <link rel="stylesheet" href="/pages/quizzes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-pic" src="../pic.jpg" alt="Profile Picture" />
+                <h2 id="student-name">Mudasir Shah</h2>
+                <p id="student-email">mudasir@gmail.com</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="courses-btn">Courses</button>
+                <button class="nav-btn" id="quizzes-btn">Quizzes</button>
+                <button class="nav-btn" id="reminders-btn">Reminders</button>
+                <button class="nav-btn" id="profile-btn">Profile</button>
+            </div>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <div class="quizzes-section">
+                <h1>Your Upcoming Quizzes</h1>
+
+                <div class="quiz-list">
+                    <div class="quiz-item">
+                        <h3>Web Development Quiz</h3>
+                        <p>Progress: 80%</p>
+                        <p>Due: 2nd May, 2025</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+
+                    <div class="quiz-item">
+                        <h3>Data Science Quiz</h3>
+                        <p>Progress: 60%</p>
+                        <p>Due: 5th May, 2025</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+
+                    <div class="quiz-item">
+                        <h3>Machine Learning Quiz</h3>
+                        <p>Progress: 50%</p>
+                        <p>Due: 10th May, 2025</p>
+                        <button class="btn-start">Start Quiz</button>
+                    </div>
+
+                    <!-- Add more quizzes here if needed -->
+                </div>
+            </div>
+            <a href="/index.html" class="back-to-dashboard">Back to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

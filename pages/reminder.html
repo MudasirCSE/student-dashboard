@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders - Student Dashboard</title>
+    <link rel="stylesheet" href="/pages/reminder.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-pic" src="../pic.jpg" alt="Profile Picture" />
+                <h2 id="student-name">Mudasir Shah</h2>
+                <p id="student-email">mudasir@gmail.com</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="courses-btn">Courses</button>
+                <button class="nav-btn" id="quizzes-btn">Quizzes</button>
+                <button class="nav-btn" id="reminders-btn">Reminders</button>
+                <button class="nav-btn" id="profile-btn">Profile</button>
+            </div>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <!-- Add Reminder Form -->
+            <div class="add-reminder">
+                <h2>Add a Reminder</h2>
+                <form id="reminder-form">
+                    <div class="input-group">
+                        <label for="reminder-name">Reminder Name</label>
+                        <input type="text" id="reminder-name" placeholder="Enter reminder name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reminder-date">Date</label>
+                        <input type="date" id="reminder-date" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reminder-time">Time</label>
+                        <input type="time" id="reminder-time" required>
+                    </div>
+
+                    <button type="submit" class="btn-add-reminder">Set Reminder</button>
+                </form>
+            </div>
+
+            <!-- Your Reminders Section -->
+            <div class="reminders-section">
+                <h2>Your Reminders</h2>
+                <!-- Reminder list will be dynamically inserted here -->
+                <div id="reminders-list"></div>
+            </div>
+            <a href="/index.html" class="back-to-dashboard">Back to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="reminder.js"></script>
+</body>
+</html>
