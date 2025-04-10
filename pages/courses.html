@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/pages/courses.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-pic" src="../pic.jpg" alt="Profile Picture" />
+                <h2 id="student-name">Mudasir Shah</h2>
+                <p id="student-email">mudasir@gmail.com</p>
+                <!-- Notification Icon -->
+                <div class="notification-wrapper" id="notificationIcon">
+                   🔔
+                   <span class="badge" id="badge">0</span>
+               </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="courses-btn">Courses</button>
+                <button class="nav-btn" id="quizzes-btn">Quizzes</button>
+                <button class="nav-btn" id="reminders-btn">Reminders</button>
+                <button class="nav-btn" id="profile-btn">Profile</button>
+                <button class="nav-btn" id="progress-btn">Progress</button>
+            </div>
+            <button id="theme-toggle" class="theme-btn">Toggle Theme</button>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <section class="courseSection">
+                <h1 class="mainHeading">Enrolled Courses</h1>
+                <div class="courseContainer">
+                    <!-- Course Cards -->
+                    <div class="courseCard">
+                        <img src="https://img-c.udemycdn.com/course/480x270/1565838_e54e_18.jpg" alt="Web Development">
+                        <h3>The Complete Full Stack Web Development Course</h3>
+                        <p>Dr. Angela Yu</p>
+                    </div>
+                    <div class="courseCard">
+                        <img src="https://img-c.udemycdn.com/course/480x270/5170404_d282_9.jpg" alt="AI">
+                        <h3>The Complete AI Learn ChatGPT, Generative AI</h3>
+                        <p>Julian Melanson</p>
+                    </div>
+                    <div class="courseCard">
+                        <img src="https://img-c.udemycdn.com/course/480x270/1436092_2024_4.jpg" alt="React Native">
+                        <h3>React Native The Complete Guide</h3>
+                        <p>Maximilian Schwarzmüller</p>
+                    </div>
+                    <div class="courseCard">
+                        <img src="https://img-c.udemycdn.com/course/480x270/1219332_bdd7.jpg" alt="AI">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Hadelin de Ponteves</p>
+                    </div>
+                </div>
+            </section>
+            <a href="/index.html" class="back-to-dashboard">Back to Dashboard</a>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
